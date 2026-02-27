@@ -18,6 +18,8 @@ jobs:
       # 1. 把你的代码拉取到这台云端服务器上
       - name: Checkout Code
         uses: actions/checkout@v4
+        with:
+          submodules: true
 
       # 2. 开启 Docker 的高级编译功能 (支持多架构和缓存)
       - name: Set up Docker Buildx
