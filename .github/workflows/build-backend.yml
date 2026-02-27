@@ -37,7 +37,7 @@ jobs:
         with:
           context: .
           # 指定你要编译哪个 Dockerfile (这里以后端为例)
-          file: install/docker/Dockerfile-backend
+          file: install/docker/Dockerfile
           # 打包完直接推送到云端仓库
           push: true
           # 给你打包出来的镜像贴个标签 (镜像地址)
